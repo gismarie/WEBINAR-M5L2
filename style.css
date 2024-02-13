@@ -1,6 +1,9 @@
 body{
- margin: 0%;  
+ margin: 0%;
+ font-family:'Lucida Sans';
+ font-size:x-large;
 }
+
 header{
     top: 0%;
     height:10vh;
@@ -8,12 +11,151 @@ header{
     flex-direction: row;
     align-items:center;
     justify-content:space-between;
-    background-color: rgb(106, 106, 195);
-
-    &img{
-        width: 30px;
-        padding: 10px;
+    background-color: rgb(76, 76, 144);
+    
+    
+    & img{
+        width: 50px;
+        padding: 20px;
     }
+       
+    & .menu-navegacion {
+        padding-right: 5%;
 
-
+        & a{
+            text-decoration: none;
+            color:rgb(226, 235, 234);
+            padding: 10px; 
+        }
+    }
+    
+    & .menu-navegacion a:hover{
+        border-bottom: 4px solid rgb(231, 145, 114);
+        font-weight: 600;
+        color:bisque;
+        transition-duration: 0.3s;
+    }
 }
+.pagina-principal {
+    height: 93vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background: url(https://desktop.arcgis.com/es/arcmap/latest/manage-data/las-dataset/GUID-85A1877E-1C26-47B3-B458-B1474887169D-web.png);
+    background-size: cover;
+    background-color: rgb(230, 235, 248);
+    background-blend-mode: overlay;
+    box-shadow: inset 0px 0px 40px 1px rgba(3, 50, 160, 0.64);
+
+    & h1{
+        font-size: 3rem;
+        color:rgb(0, 0, 139);
+        font-weight:600;
+        margin-bottom:0;
+    } 
+    & h3{
+        font: size 1rem;
+        color: rgb(46, 46, 231);
+    }
+    & a{
+        padding: 10px;
+        background-color: rgb(167, 191, 234);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 15px;
+        border-color: blue;
+        text-decoration: none;
+        margin-top: 10px;
+        color: mediumblue;
+        cursor: pointer;
+        transition-duration: 50ms;
+            }
+    & a:hover {   
+        box-shadow: 2px 2px 0px 1px rgb(236, 30, 85);
+        background-color: rgb(225, 213, 123);
+        transform: translateY(-3px) translateX(-3px);
+        transition: 200ms;
+}
+}
+h2 {
+    text-align: center;
+    background-color: rgb(79, 208, 165);
+    color: rgb(196, 221, 243);
+    margin: 0%;
+    padding: 15px;
+    border-style: solid;
+    border-width: 5px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+}
+
+
+.aplicaciones {
+    & .contenedor-aplicaciones {
+        padding: 5%;
+        background: url(https://desktop.arcgis.com/es/arcmap/latest/manage-data/las-dataset/GUID-85A1877E-1C26-47B3-B458-B1474887169D-web.png);
+        background-size: cover;
+        background-color: rgb(153, 213, 234);
+        background-blend-mode: overlay;
+        box-shadow: inset 0px 0px 40px 1px rgba(3, 50, 160, 0.64);
+    }
+    
+    & .aplicacion {
+        padding: 3%;
+        background-color: rgb(161, 187, 237);
+        border-radius: 15px;
+        margin-bottom: 5%;
+        gap: 10%;
+        border-style: solid;
+        border-width: 2Px;
+        border-color: blue;
+        box-shadow: inset 7px 7px 1px 1px rgba(3, 50, 160, 0.64);
+        display: flex;
+        align-items: center;
+       
+        & img{
+            width: 100px;
+        }
+
+        & .texto-aplicacion {
+            display:flex;
+            flex-direction: column;
+            width: 100%;
+
+        & h4{
+            margin: 0px;
+            font-weight: 600;
+            font-size: 1.5rem;
+        
+        & p { 
+            text-align: justify;
+        }
+
+        & a {
+            text-align: center;
+        }
+        & a {
+            padding: 10px;
+            background-color: rgb(167, 191, 234);
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 15px;
+            border-color: blue;
+            text-decoration: none;
+            margin-top: 10px;
+            color: mediumblue;
+            cursor: pointer;
+            transition: 200ms;
+        }
+        &  a:hover {
+            box-shadow: 2px 2px 0px 1px rgb(236, 30, 85);
+            background-color: rgb(225, 213, 123);
+            transform: translateY(-3px) translateX(-3px);
+            transition: 200ms;
+        }
+    }
+}       
+}
+}   
+

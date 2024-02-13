@@ -6,16 +6,64 @@
     <title>Plataforma ArcGIS</title>
     <link rel= "stylesheet" href="style.css">
     <script defer src = function.js></script>
+    
 </head>
 <body>
     <header>
         <a href="https://www.esri.es/es-es/home">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/ArcGIS_logo.png/240px-ArcGIS_logo.png" alt=" ">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/ArcGIS_logo_%28cropped%29.png/128px-ArcGIS_logo_%28cropped%29.png" alt="logo de Esri">
         </a>
         <div class="menu-navegacion">
-          <a href="">Aplicaiones</a>
+          <a href="">Aplicaciones</a>
           <a href="">Ejemplos</a>
         </div>
     </header>
+<!--se crea la seccion de la pag principal --> 
+    <section class= "pagina-principal">
+        <h1> Plataforma ArcGIS</h1>
+        <h3> Aplicaciones integradas en cualquier lugar, momento y dispositivos</h3>
+        <a href ="https://www.esri.es/es-es/home">Conócenos</a> 
+    </section>
+
+    <!--se crea la seccion de aplicaciones -->
+    <section class="Aplicaciones" id= "Seccion-Aplicaciones">
+    <h2>Aplicaciones de la plataforma</h2>
+    <!--se crea el contener grande, contiene 2 --> 
+    <div class = "contenedor-aplicaciones">
+
+        <div class="aplicacion">
+            <div class = "logo aplicacion">
+                <img src= "https://esriaustralia.com.au/sites/default/files/2019-04/arcgis-pro-banner-icon.png" alt="logo"/>
+            </div>
+            <div class = "texto-aplicacion">
+                <h4>ArcGIS Pro</h4> 
+                <p>
+                    ArcGis Pro es una aplicacion de escritorio profesional con plenas funcionalidades de Esri.
+                    Con ArcGIS Pro se puede explorar, visualizar y analizar datos, crear mapas 2D y escenas 3D, 
+                    incluso permite compartir su proyecto en ArcGIS Online o en un portal de ArcGIS Enterprise
+                </p>
+                <!--un boton para ir a la pag de la aplicacion-->
+                <a href = "https://www.esri.es/es-es/arcgis/productos/arcgis-pro/introduccion">
+                    Página del producto </a>
+            </div>
+        </div>
+
+        <div class="aplicacion">
+            <div class = "logo aplicacion">
+                <div>
+                    <img src = "https://www.esri.com/content/dam/esrisites/en-us/common/icons/product-logos/Developers.png" alt="logo"></div>
+                </div>
+                <div class = "texto-aplicacion">
+                    <h4>Arc GIS for Developers</h4>
+                    <p>Arc GIS para desarrolladores ofrece u conjunto  completo de herramientas
+                     y recursos para crear soluciones de mapeo y análisis </p>
+                    <a href = "https://www.esri.es/es-es/arcgis/productos/arcgis-for-developers/introduccion">
+                    Página del producto </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
 </body>
 </html>
